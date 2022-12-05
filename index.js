@@ -1,3 +1,8 @@
+/* eslint-disable max-classes-per-file */
+/* eslint-disable no-unused-vars */
+/* eslint-disable indent */
+/* eslint-disable no-alert */
+
 import DISPLAY_TIME_DATE from './modules/date.js';
 import navigation from './modules/navigation.js';
 import  {titleInput, authorInput, btnInput, addedBooks} from './modules/variables.js';

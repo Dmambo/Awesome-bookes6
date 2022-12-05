@@ -1,3 +1,8 @@
+/* eslint-disable max-classes-per-file */
+/* eslint-disable no-unused-vars */
+/* eslint-disable indent */
+/* eslint-disable no-alert */
+
 import {book, addBook, contact} from "./variables.js";
 
 const navigation = (() => {
