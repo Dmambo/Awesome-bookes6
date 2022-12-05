@@ -1,4 +1,5 @@
 /* eslint-disable quotes */
+/* eslint-disable comma-dangle */
 import { date } from "./variables.js";
 import { DateTime } from "./luxon.js";
 
