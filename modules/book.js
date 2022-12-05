@@ -1,8 +1,10 @@
 /* eslint-disable object-curly-newline */
 /* eslint-disable no-unused-vars */
 /* eslint-disable indent */
+/* eslint-disable max-classes-per-file */
 /* eslint-disable object-curly-spacing */
 /* eslint-disable no-trailing-spaces */
+/* eslint-disable no-multiple-empty-lines */
 
 import { titleInput, authorInput, btnInput, addedBooks } from './variables.js';
 
