@@ -5,6 +5,7 @@
 /* eslint-disable no-trailing-spaces */
 
 import { titleInput, authorInput, btnInput, addedBooks } from './variables.js';
+
 export class Book {
     constructor(title, author) {
         this.title = title;
@@ -34,7 +35,7 @@ export class Store {
          const books = Store.getBooks();
  
          books.forEach((book, index) => {
-             if (book.author === title) {
+             if ( book.author === author) {
                  books.splice(index, 1);
              }
          });
