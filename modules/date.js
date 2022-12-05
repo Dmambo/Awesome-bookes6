@@ -1,14 +1,11 @@
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-unused-vars */
-/* eslint-disable indent */
-/* eslint-disable no-alert */
-
-import { date } from './variables.js';
-import { DateTime } from './luxon.js';
+import { date } from "./variables.js";
+import { DateTime } from "./luxon.js";
 
 const DISPLAY_TIME_DATE = () => {
   const currentDate = DateTime.now();
-  date.innerHTML = currentDate.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+  date.innerHTML = currentDate.toLocaleString(
+    DateTime.DATETIME_MED_WITH_SECONDS
+  );
 };
 
 export default DISPLAY_TIME_DATE;

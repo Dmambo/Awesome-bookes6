@@ -1,66 +1,60 @@
-/* eslint-disable object-curly-newline */
-/* eslint-disable no-unused-vars */
-/* eslint-disable indent */
 /* eslint-disable max-classes-per-file */
-/* eslint-disable object-curly-spacing */
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable no-multiple-empty-lines */
 
-import { titleInput, authorInput, btnInput, addedBooks } from './variables.js';
+import { titleInput, authorInput, btnInput, addedBooks } from "./variables.js";
 
 export class Book {
-    constructor(title, author) {
-        this.title = title;
-        this.author = author;
-    }
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 }
 
 export class Store {
-    static getBooks() {
-         let books;
-         if (localStorage.getItem('books') === null) {
-             books = [];
-         } else {
-             books = JSON.parse(localStorage.getItem('books'));
-         }
+  static getBooks() {
+    let books;
+    if (localStorage.getItem("books") === null) {
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem("books"));
+    }
 
-         return books;
-     }
+    return books;
+  }
 
-     static addBook(book) {
-         const books = Store.getBooks();
-         books.push(book);
-         localStorage.setItem('books', JSON.stringify(books));
-     }
+  static addBook(book) {
+    const books = Store.getBooks();
+    books.push(book);
+    localStorage.setItem("books", JSON.stringify(books));
+  }
 
-    //  remove book from storage 
-        static removeBook(author) {
-            const books = Store.getBooks();
-            books.forEach((book, index) => {
-                if (book.author === author) {
-                    books.splice(index, 1);
-                }
-            });
-         localStorage.removeItem('books', JSON.stringify(books));
-     }
- }
- // UI class: handle UI tasks
- 
- export class UI {
-     static displayBooks() {
-         const storedBook = Store.getBooks();
- 
-         const books = storedBook;
- 
-         books.forEach((book) => UI.addBookToList(book));
-     }
- 
-     static addBookToList(book) {
-         const list = document.querySelector('#added-book');
- 
-         const row = document.createElement('tr');
- 
-         row.innerHTML = `
+  //  remove book from storage
+  static removeBook(author) {
+    const books = Store.getBooks();
+    books.forEach((book, index) => {
+      if (book.author === author) {
+        books.splice(index, 1);
+      }
+    });
+    localStorage.removeItem("books", JSON.stringify(books));
+  }
+}
+// UI class: handle UI tasks
+
+export class UI {
+  static displayBooks() {
+    const storedBook = Store.getBooks();
+
+    const books = storedBook;
+
+    books.forEach((book) => UI.addBookToList(book));
+  }
+
+  static addBookToList(book) {
+    const list = document.querySelector("#added-book");
+
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
             <div class="book-container">
                   <div class="book">
                      "${book.title}" by
@@ -70,23 +64,22 @@ export class Store {
                      <a href="#" class="delete">remove</a>
                      </div>
              </div>`;
-         list.appendChild(row);
-     }
- 
-     static deleteBook(el) {
-     if (el.classList.contains('delete')) {
-         el.parentElement.parentElement.remove();
-     }
- }
- 
-     static clearFields() {
-     titleInput.value = '';
-     authorInput.value = '';
-     }
- 
-     static displayList() {
-         const list = document.querySelector('#added-book');
-         list.style.display = 'flex';
-     }
+    list.appendChild(row);
+  }
+
+  static deleteBook(el) {
+    if (el.classList.contains("delete")) {
+      el.parentElement.parentElement.remove();
+    }
+  }
+
+  static clearFields() {
+    titleInput.value = "";
+    authorInput.value = "";
+  }
+
+  static displayList() {
+    const list = document.querySelector("#added-book");
+    list.style.display = "flex";
+  }
 }
- 

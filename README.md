@@ -33,21 +33,25 @@
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+this project was done with HTML, CSS AND JAVASCRIPT(ES6).
+it's a book list project that allows you to add book both in the ui and the localstorage and also gives you chance to delete from both
 
 **[your_project__name]** is a...
 
 ## 🛠 Built With <a name="built-with">HTML, CSS AND JAVASCRIPT</a>
 
-<!-- Features -->
+-HTML
+-CSS
+-JAVASCRIPT
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[key_feature_1]**
+  ALLOWS YOU TO ADD BOOK
 - **[key_feature_2]**
+  ALLOWS YOU TO DELETE BOOK
 - **[key_feature_3]**
+  SINGLE WEBPAGE
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -55,15 +59,14 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://dmambo.github.io/My-booklist/)
+- [Live Demo Link](https://dmambo.github.io/Awesome-bookes6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
+
 To use this project.
 First you need to clone the respository into your local machine.
 
@@ -76,9 +79,8 @@ html, css and javascript.
 ### Setup
 
 Clone this repository to your desired folder:
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-
+cd my-folder
+git clone git@github.com:myaccount/my-project.git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
