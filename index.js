@@ -1,8 +1,9 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-alert */
 /* eslint-disable indent */
 /* eslint-disable no-multi-spaces */
 /* eslint-disable object-curly-spacing */
 /* eslint-disable no-trailing-spaces */
+/* eslint-disable object-curly-newline */
 
 import DISPLAY_TIME_DATE from './modules/date.js';
 import navigation from './modules/navigation.js';
