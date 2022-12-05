@@ -871,5 +871,3 @@ class t extends Error {} class z extends t {constructor(t) { super(`Invalid Date
   } function On(t) { if (L.isDateTime(t)) return t; if (t && t.valueOf && c(t.valueOf())) return L.fromJSDate(t); if (t && typeof t === 'object') return L.fromObject(t); throw new o(`Unknown datetime argument: ${t}, of type ${typeof t}`); }s = '3.0.4'; export {
     L as DateTime, V as Duration, v as FixedOffsetZone, w as IANAZone, Sr as Info, x as Interval, ne as InvalidZone, k as Settings, Gt as SystemZone, s as VERSION, i as Zone,
   };
-
-  // export default DateTime;
