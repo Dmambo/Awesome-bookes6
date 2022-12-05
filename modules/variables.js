@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 export const titleInput = document.getElementById("title");
 export const authorInput = document.getElementById("author");
 export const btnInput = document.getElementById("submit-btn");

@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import { date } from "./variables.js";
 import { DateTime } from "./luxon.js";
 

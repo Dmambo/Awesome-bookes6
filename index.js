@@ -1,3 +1,6 @@
+/* eslint-disable no-alert */
+/* eslint-disable quotes */
+
 import DISPLAY_TIME_DATE from "./modules/date.js";
 import navigation from "./modules/navigation.js";
 import {

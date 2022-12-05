@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import { book, addBook, contact } from "./variables.js";
 
 const navigation = () => {

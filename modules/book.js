@@ -1,6 +1,6 @@
 /* eslint-disable max-classes-per-file */
-
-import { titleInput, authorInput, btnInput, addedBooks } from "./variables.js";
+/* eslint-disable quotes */
+import { titleInput, authorInput } from "./variables.js";
 
 export class Book {
   constructor(title, author) {
