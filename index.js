@@ -5,9 +5,8 @@
 
 import DISPLAY_TIME_DATE from './modules/date.js';
 import navigation from './modules/navigation.js';
-import  {titleInput, authorInput, btnInput, addedBooks} from './modules/variables.js';
-import { Book,Store, UI } from './modules/book.js';
-
+import  {titleInput, authorInput, btnInput, addedBooks } from './modules/variables.js';
+import { Book, Store, UI } from './modules/book.js';
 
 DISPLAY_TIME_DATE();
 setInterval(DISPLAY_TIME_DATE, 1000);

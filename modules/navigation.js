@@ -3,7 +3,7 @@
 /* eslint-disable indent */
 /* eslint-disable no-alert */
 
-import {book, addBook, contact} from "./variables.js";
+import { book, addBook, contact}  from './variables.js';
 
 const navigation = (() => {
     book.addEventListener('click', (e) => {

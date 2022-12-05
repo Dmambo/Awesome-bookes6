@@ -2,8 +2,9 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable indent */
 /* eslint-disable no-alert */
+/* eslint-disable no-trailing-spaces */
 
-import {titleInput, authorInput, btnInput, addedBooks} from './variables.js';
+import { titleInput, authorInput, btnInput, addedBooks } from './variables.js';
 export class Book {
     constructor(title, author) {
         this.title = title;
@@ -19,16 +20,16 @@ export class Store {
          } else {
              books = JSON.parse(localStorage.getItem('books'));
          }
- 
+
          return books;
      }
- 
+
      static addBook(book) {
          const books = Store.getBooks();
          books.push(book);
          localStorage.setItem('books', JSON.stringify(books));
      }
- 
+
     static removeBook(author) {
          const books = Store.getBooks();
  
@@ -87,8 +88,3 @@ export class Store {
      }
  }
  
-
-
-
-
-
