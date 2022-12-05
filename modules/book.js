@@ -1,7 +1,7 @@
-/* eslint-disable max-classes-per-file */
+/* eslint-disable object-curly-newline */
 /* eslint-disable no-unused-vars */
 /* eslint-disable indent */
-/* eslint-disable no-alert */
+/* eslint-disable object-curly-spacing */
 /* eslint-disable no-trailing-spaces */
 
 import { titleInput, authorInput, btnInput, addedBooks } from './variables.js';
@@ -35,7 +35,7 @@ export class Store {
          const books = Store.getBooks();
  
          books.forEach((book, index) => {
-             if ( book.author === author) {
+             if (book.author === author) {
                  books.splice(index, 1);
              }
          });
@@ -87,5 +87,5 @@ export class Store {
          const list = document.querySelector('#added-book');
          list.style.display = 'flex';
      }
- }
+}
  

@@ -1,11 +1,12 @@
-/* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
 /* eslint-disable indent */
-/* eslint-disable no-alert */
+/* eslint-disable no-multi-spaces */
+/* eslint-disable object-curly-spacing */
+/* eslint-disable no-trailing-spaces */
 
 import DISPLAY_TIME_DATE from './modules/date.js';
 import navigation from './modules/navigation.js';
-import  {titleInput, authorInput, btnInput, addedBooks } from './modules/variables.js';
+import { titleInput, authorInput, btnInput, addedBooks } from './modules/variables.js';
 import { Book, Store, UI } from './modules/book.js';
 
 DISPLAY_TIME_DATE();
