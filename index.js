@@ -1,4 +1,4 @@
-/* eslint-disable no-alert */
+
 /* eslint-disable indent */
 /* eslint-disable no-multi-spaces */
 /* eslint-disable object-curly-spacing */
@@ -30,7 +30,6 @@ btnInput.addEventListener('click', (e) => {
     // Validate
     if (title === '' || author === '') {
         alert('Please fill in all fields');
-        // ui.showAlert('Please fill in all fields', 'error');
     } else {
         // Instatiate book
         const book = new Book(title, author);
@@ -53,8 +52,8 @@ addedBooks.addEventListener('click', (e) => {
     UI.deleteBook(e.target);
 
      // Remove book from store
+
      Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
-          // show message
-    alert('Book Removed!', 'success');
-    e.preventDefault();
+     e.preventDefault();
+
 });

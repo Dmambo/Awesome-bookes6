@@ -33,16 +33,15 @@ export class Store {
          localStorage.setItem('books', JSON.stringify(books));
      }
 
-    static removeBook(author) {
-         const books = Store.getBooks();
- 
-         books.forEach((book, index) => {
-             if (book.author === author) {
-                 books.splice(index, 1);
-             }
-         });
- 
-         localStorage.setItem('books', JSON.stringify(books));
+    //  remove book from storage 
+        static removeBook(author) {
+            const books = Store.getBooks();
+            books.forEach((book, index) => {
+                if (book.author === author) {
+                    books.splice(index, 1);
+                }
+            });
+         localStorage.removeItem('books', JSON.stringify(books));
      }
  }
  // UI class: handle UI tasks
@@ -63,7 +62,7 @@ export class Store {
  
          row.innerHTML = `
             <div class="book-container">
-                 <div class="book">
+                  <div class="book">
                      "${book.title}" by
                      ${book.author}
                  </div>
@@ -76,7 +75,7 @@ export class Store {
  
      static deleteBook(el) {
      if (el.classList.contains('delete')) {
-         el.parentElement.parentElement.parentElement.remove();
+         el.parentElement.parentElement.remove();
      }
  }
  
