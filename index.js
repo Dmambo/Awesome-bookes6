@@ -36,7 +36,6 @@ btnInput.addEventListener('click', (e) => {
     Store.addBook(book);
     // Add Book to UI
     UI.addBookToList(book);
-    
     // SUCCESS MESSAGE
     alert('Book Added!', 'success'); 
     // clear fields
