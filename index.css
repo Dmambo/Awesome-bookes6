@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 44px;
+  border: 1px solid rgb(208, 203, 203);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  cursor: pointer;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact ul li {
+  margin-bottom: 10px;
+  gap: 12px;
+  line-height: 14px;
+}
+
+.navbar ul li:hover {
+  background-color: green;
+  color: #333;
+}
+
+#date {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 44px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(208, 203, 203);
+  padding: 10px;
+  border-radius: 10px;
+  width: 1000px;
+  margin: auto;
+}
+
+.newbook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 10px;
+  width: 880px;
+  margin: 20px auto;
+}
+
+#submit-btn {
+  display: flex;
+  width: 80px;
+  justify-content: center;
+  float: left;
+  align-self: flex-end;
+}
+
+#submit-btn:hover {
+  background-color: green;
+  color: #333;
+  font-weight: bold;
+}
+
+.booksawe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+#added-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 15px;
+  border: 1px solid rgb(208, 203, 203);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background-color: #fffefe;
+  color: rgb(20, 20, 20);
+  padding: 2px 2px;
+  border-radius: 5px;
+  border: 2px solid rgb(20, 20, 20);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete {
+  text-decoration: none;
+  color: red;
+}
+
+.delete-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.delete:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list:active {
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.active {
+  background-color: green;
+  color: #333;
+}
+
+.slide-in {
+  display: flex;
+  border: 1px solid #d3d3d3;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 0.1);
+  animation: slide-in 0.2s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#contact,
+#book-form,
+#added-books {
+  display: none;
+}
+
+footer {
+  display: flex;
+  margin-top: 15px;
+  background: #ddd;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(208, 203, 203);
+  border-radius: 10px;
+  padding: 15px;
+  width: 1000px;
+  margin: auto;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.contact p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.contact a:hover {
+  color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    max-width: 100%;
+    border: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+  }
+
+  #date {
+    display: none;
+  }
+}
