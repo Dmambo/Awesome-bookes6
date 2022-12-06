@@ -1,6 +1,6 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable quotes */
-import { titleInput, authorInput } from "./variables.js";
+import { titleInput, authorInput } from './variables.js';
 
 export class Book {
   constructor(title, author) {
@@ -12,10 +12,10 @@ export class Book {
 export class Store {
   static getBooks() {
     let books;
-    if (localStorage.getItem("books") === null) {
+    if (localStorage.getItem('books') === null) {
       books = [];
     } else {
-      books = JSON.parse(localStorage.getItem("books"));
+      books = JSON.parse(localStorage.getItem('books'));
     }
 
     return books;
@@ -24,7 +24,7 @@ export class Store {
   static addBook(book) {
     const books = Store.getBooks();
     books.push(book);
-    localStorage.setItem("books", JSON.stringify(books));
+    localStorage.setItem('books', JSON.stringify(books));
   }
 
   //  remove book from storage
@@ -35,7 +35,7 @@ export class Store {
         books.splice(index, 1);
       }
     });
-    localStorage.removeItem("books", JSON.stringify(books));
+    localStorage.removeItem('books', JSON.stringify(books));
   }
 }
 // UI class: handle UI tasks
@@ -50,36 +50,36 @@ export class UI {
   }
 
   static addBookToList(book) {
-    const list = document.querySelector("#added-book");
+    const list = document.querySelector('#added-book');
 
-    const row = document.createElement("tr");
+    const row = document.createElement('tr');
 
     row.innerHTML = `
-            <div class="book-container">
-                  <div class="book">
-                     "${book.title}" by
+            <div class='book-container'>
+                  <div class='book'>
+                     '${book.title}' by
                      ${book.author}
                  </div>
-                     <div class="delete-btn">
-                     <a href="#" class="delete">remove</a>
+                     <div class='delete-btn'>
+                     <a href='#' class='delete'>remove</a>
                      </div>
              </div>`;
     list.appendChild(row);
   }
 
   static deleteBook(el) {
-    if (el.classList.contains("delete")) {
+    if (el.classList.contains('delete')) {
       el.parentElement.parentElement.remove();
     }
   }
 
   static clearFields() {
-    titleInput.value = "";
-    authorInput.value = "";
+    titleInput.value = '';
+    authorInput.value = '';
   }
 
   static displayList() {
-    const list = document.querySelector("#added-book");
-    list.style.display = "flex";
+    const list = document.querySelector('#added-book');
+    list.style.display = 'flex';
   }
 }

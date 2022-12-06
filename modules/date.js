@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 /* eslint-disable comma-dangle */
-import { date } from "./variables.js";
-import { DateTime } from "./luxon.js";
+import { date } from './variables.js';
+import { DateTime } from './luxon.js';
 
 const DISPLAY_TIME_DATE = () => {
   const currentDate = DateTime.now();
