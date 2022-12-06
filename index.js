@@ -27,6 +27,7 @@ btnInput.addEventListener('click', (e) => {
 
   // Validate
   if (title === '' || author === '') {
+    /* eslint-disable no-alert */
     alert('Please fill in all fields');
   } else {
     // Instatiate book
@@ -36,7 +37,7 @@ btnInput.addEventListener('click', (e) => {
     // Add Book to UI
     UI.addBookToList(book);
     
-    /* eslint-disable no-alert */
+    // SUCCESS MESSAGE
     alert('Book Added!', 'success'); 
     // clear fields
     UI.clearFields();
